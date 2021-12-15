@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <math.h>
 #include "config.h"
 
 
@@ -19,12 +20,12 @@ double Quot(double num1,double num2){
 }
 
 double Mod(double num1,double num2){
-    return num1 - num2*(num1/num2);
+    return fmod(num1,num2);
 }
 
 int is_legal(double num1,double num2,int type){
     if((type==QUOT||type==MOD)&&num2==0){
-        printf("除数为0，无法进行运算。\n\n");
+        printf("?????0?????????????\n\n");
         return 0;
     }else{
         return 1;
