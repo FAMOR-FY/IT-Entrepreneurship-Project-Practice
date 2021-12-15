@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <math.h>
 #include "config.h"
 
 double Sum(double num1, double num2);
