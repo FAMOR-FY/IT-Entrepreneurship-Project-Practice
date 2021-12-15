@@ -1,2 +1,1 @@
-# IT-Entrepreneurship-Project-Practice
-A sample calculator.
+# -IT-Entrepreneurship-Project-Practice
