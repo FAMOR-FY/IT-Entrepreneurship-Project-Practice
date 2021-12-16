@@ -31,7 +31,7 @@ int is_legal(double num1,double num2,int type){
         return 1;
     }
 }
-
+//计算器主程序
 double calculator(double num1,double num2,int type){
     switch(type){
     case SUM:
