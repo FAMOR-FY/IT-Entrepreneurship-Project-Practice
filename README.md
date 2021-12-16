@@ -4,6 +4,7 @@
 
 [main.c](https://github.com/FAMOR-FY/IT-Entrepreneurship-Project-Practice/blob/main/main.c)
 
+## 运行截图
 ![运行截图1](https://user-images.githubusercontent.com/57088240/146193962-86710f5b-7c95-4da2-af24-5834c80379f2.png)
 
 ![运行截图2](https://user-images.githubusercontent.com/57088240/146194088-443a4ace-c3c5-4b02-8012-6af5895a0b0b.png)
