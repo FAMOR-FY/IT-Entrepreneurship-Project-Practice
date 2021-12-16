@@ -7,10 +7,15 @@
 ## 主程序引用关系
 
 #include<stdio.h>
+
 #include<string.h>
+
 #include "config.h"
+
 #include "ioput.h"
+
 #include "ui.h"
+
 #include "calculator.h"
 
 ## 运行截图
