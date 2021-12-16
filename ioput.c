@@ -3,17 +3,17 @@
 #include<string.h>
 #include "config.h"
 
-
+// è·å–è¾“å…¥çš„æ•°å­—
 char *get_str(int i){
     char str_array[1024];
-    printf("ÇëÊäÈëµÚ%d¸öÕûÊı£º ",i);
+    printf("è¯·è¾“å…¥ç¬¬%dä¸ªæ•´æ•°ï¼š ",i);
     scanf("%s",str_array);
     printf("\n");
     char *num_temp;
     num_temp = &str_array;
     return num_temp;
 }
-
+// åˆ¤æ–­è¾“å…¥æ˜¯å¦ä¸ºæ•´æ•°æ ¼å¼
 int is_int(char *str_temp){
     int flag = 1;
     int len = strlen(str_temp);
@@ -25,13 +25,13 @@ int is_int(char *str_temp){
     }
     return flag;
 }
-
+// å­—ç¬¦ä¸²è½¬double
 double str2dbl(char *num_temp){
     double temp;
     temp = atof(num_temp);
     return temp;
 }
-
+// è¾“å…¥ä¸»ç¨‹åº
 double *input(){
     int i = 1;
     double nums[2];
@@ -42,29 +42,29 @@ double *input(){
             nums[i - 1] = str2dbl(num_temp);
             i++;
         }else{
-            printf("ÊäÈë¸ñÊ½ÓĞÎó£¡\n\n");
+            printf("è¾“å…¥æ ¼å¼æœ‰è¯¯ï¼\n\n");
         }
     }
     num_array = &nums;
     return num_array;
 }
-
+// è¾“å‡ºä¸»ç¨‹åº
 void output(double num1,double num2,double out,int type){
     switch(type){
         case SUM:
-            printf("Á½ÊıÖ®ºÍ£º%lf + %lf = %lf\n\n",num1,num2,out);
+            printf("ä¸¤æ•°ä¹‹å’Œï¼š%lf + %lf = %lf\n\n",num1,num2,out);
             break;
         case DIFFER:
-            printf("Á½ÊıÖ®²î£º%lf - %lf = %lf\n\n",num1,num2,out);
+            printf("ä¸¤æ•°ä¹‹å·®ï¼š%lf - %lf = %lf\n\n",num1,num2,out);
             break;
         case PROD:
-            printf("Á½ÊıÖ®»ı£º%lf ¡Á %lf = %lf\n\n",num1,num2,out);
+            printf("ä¸¤æ•°ä¹‹ç§¯ï¼š%lf ?? %lf = %lf\n\n",num1,num2,out);
             break;
         case QUOT:
-            printf("Á½ÊıÖ®ÉÌ£º%lf ¡Â %lf = %lf\n\n",num1,num2,out);
+            printf("ä¸¤æ•°ä¹‹å•†ï¼š%lf ?? %lf = %lf\n\n",num1,num2,out);
             break;
         case MOD:
-            printf("Á½ÊıÖ®Ä££º%lf %% %lf = %lf\n\n",num1,num2,out);
+            printf("ä¸¤æ•°ä¹‹æ¨¡ï¼š%lf %% %lf = %lf\n\n",num1,num2,out);
             break;
     }
 }
