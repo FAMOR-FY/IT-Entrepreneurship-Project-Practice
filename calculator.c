@@ -2,30 +2,30 @@
 #include <math.h>
 #include "config.h"
 
-
+// 加法运算
 double Sum(double num1,double num2){
     return num1 + num2;
 }
-
+// 减法运算
 double Differ(double num1,double num2){
     return num1 - num2;
 }
-
+// 乘法运算
 double Prod(double num1,double num2){
     return num1 * num2;
 }
-
+// 除法运算
 double Quot(double num1,double num2){
     return num1 / num2;
 }
-
+// 取余运算
 double Mod(double num1,double num2){
     return fmod(num1,num2);
 }
-
+// 判断除数是否为0
 int is_legal(double num1,double num2,int type){
     if((type==QUOT||type==MOD)&&num2==0){
-        printf("?????0?????????????\n\n");
+        printf("除数不可为零！\n\n");
         return 0;
     }else{
         return 1;
